@@ -39,5 +39,5 @@ test("можно ввести имя пользователя", async () => {
 test("кнопка имеет текст Отправить", async () => {
   await page.goto(BASE);
   const text = await page.$eval("#submitBtn", el => el.textContent);
-  expect(text).toBe("Отправить");
+  expect(text).toBe("Отправить форму");
 });

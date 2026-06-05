@@ -22,7 +22,7 @@ jobs:
         run: sudo apt-get install -y chromium-browser
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Start local server
         run: |
@@ -32,4 +32,4 @@ jobs:
       - name: Run tests
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
-        run: npx jest
+        run: ./node_modules/.bin/jest

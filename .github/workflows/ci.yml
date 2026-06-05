@@ -32,4 +32,4 @@ jobs:
       - name: Run tests
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
-        run: npm test
+        run: npx jest
